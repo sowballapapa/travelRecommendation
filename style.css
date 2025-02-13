@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-image: url(./assets/DJI_0084-scaled.jpg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    background-size: cover;
+    font-size: 120%;
+}
+
+header{
+    img{
+        width: 50px;
+        height: auto;
+    }
+    span{
+        color: white;
+        font-size: larger;
+        border-bottom: 2px double whitesmoke;
+        border-left: 2px double whitesmoke;
+    }
+    background-color: rgba(15, 115, 230, 0.45);
+    padding: 5px;
+    padding-bottom: 10px;
+    box-shadow: rgba(1, 44, 92, 0.45) 0px 20px 15px 10px;
+
+    nav{
+        text-align: center;
+       float: right;
+    }
+    nav, ul, li{
+        display: inline-block;
+        margin-right: 10px;
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            font-size: x-large;
+        }
+        a:hover, a:focus{
+            color: antiquewhite;
+            font-weight: 500;
+        }
+        input{
+            margin-left: 350px;
+            border-radius: 20px;
+            height: 30px;
+            width: 350px;
+        }
+        button{
+            height: 30px;        
+            background-color: rgba(3, 18, 36, 0.75);
+            color: aliceblue;
+            font-weight: bolder;
+            border: 2px solid aliceblue;
+            border-radius: 10px;
+            img{
+                width: fit-content;
+                height: 25px;
+            }
+            text-align: center;
+        }
+        
+     }
+}
+.input_wrapper{
+    position: relative;
+    display: inline-block;
+}
+.input-wrapper input {
+    padding-right: 40px;
+}
+
+.input-wrapper button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+aside{
+    padding: 15px;
+    img{
+        width: 20px;
+    }
+    a{
+        display: block;
+        padding-bottom: 5px
+    }
+}
+
+.container{
+    margin: 20px 5px;
+    section{
+        padding: 30px;
+        width: 350px;
+        height: fit-content;
+        background-color: rgba(7, 36, 70, 0.45);
+    button{
+        color: whitesmoke;
+        background-color: rgba(15, 115, 230, 0.45);
+        border-radius: 10px;
+        font-size: large;
+        padding: 5px 15px;
+        font-weight: bold;
+        border: whitesmoke 3px solid;
+    }
+    h1{
+        font-size: 250%;
+    }
+    }
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.hr{
+    height: 250px;
+    width: 0;
+    border: 2px solid white;
+    margin-bottom: 30px;
+}
+
+#searchResult{
+    border-radius: 10px;
+    img{
+        width: 100%;
+    }
+    padding: 0;
+    div{
+        background-color: aliceblue;
+        color: black;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        p{
+            padding-left: 5px;
+        }
+        button{
+            margin-left: 10px;
+        }
+    }
+    .result{
+        padding: 10px;
+    }
+}
+.barResult{
+    margin: 20px 0px;
+    height: 20px;
+    width: 100%;
+    background-color: rgb(15, 115, 230);
+    border-radius: 10px;
+}
+
+main{
+    margin: 100px 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    h1{
+        font-size: 250%;
+    }
+}
+.about{
+    background-color: rgba(3, 18, 36, 0.75);
+    padding: 20px;
+    padding-left: 2px;
+    margin-right: 30px;
+}
+
+.team{
+    padding: 20px;
+    padding-left: 2px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.teamMembers{
+    padding: 20px;
+    padding-left: 2px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#teamMember{
+    background-color: rgba(3, 18, 36, 0.75);
+    margin: 10px;
+    padding: 5px;
+    width: fit-content;float: left;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+}
+
+.memberAbout{
+    border-left: 2px solid aliceblue;
+    padding-left: 5px;
+    width: 150px;
+    div{
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: rgb(24, 78, 145);
+        width: fit-content;
+        padding: 2px;
+    }
+}
+
+.memberImg{
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.form{
+    background-color: rgba(3, 18, 36, 0.45);
+    margin-right: 30px;
+    padding: 10px;
+    div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    input{
+        height: 30px;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 10px;
+        color: white;
+    }
+    textarea{
+        width: 100%;
+        height: 70px;
+        background-color: transparent;
+        border-radius: 10px;
+        color: white;
+    }
+    button{
+        width: 100%;
+        height: 30px;
+        background-color: rgba(15, 115, 230);
+        color: aliceblue;
+        font-size: larger;
+        border: 2px solid aliceblue;
+        border-radius: 10px;
+    }
+}

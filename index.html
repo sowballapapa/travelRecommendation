@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Toukki-Jaam</title>
+</head>
+<body>
+    <header>
+        <span>
+            <img src="./assets/logo.png" alt="Logo">
+            <Strong>Toukki-Jaam</Strong>
+        </span>
+
+        <li class="input_wrapper">
+            <input type="text" name="search" id="searchInput" placeholder="Enter a destination or a keyword">
+            <button id="btnSearch">
+                &#128269; Search
+            </button>
+            <button id="btnClearSearch">
+                &#2328; Clear
+            </button>
+        </li>
+        <nav>
+            <ul>
+                <li><a style="text-decoration: underline;" href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <aside>
+            <div class="hr"></div>
+            <div>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/iconizer-youtube.svg" alt="youtube">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/iconizer-twitter.svg" alt="x_twitter">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/iconizer-facebook-f.svg" alt="facebook">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/iconizer-instagram.svg" alt="instagram">
+                </a>
+            </div>
+        </aside>
+        <div class="container">
+        <section>
+            <h1>
+                EXPLORE DREAM DESTINATION
+            </h1>
+            <p>
+                It encourages explorattion of unfamiliar territories diverse cultures and
+                landscapes, while pursuing the desired destination that captivates the heart
+                and ignites a sense of wonder.
+            </p>
+            <button>BOOK NOW</button>
+        </section>
+        <section id="searchResult">
+        </section>
+    </div>
+</main>
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>
