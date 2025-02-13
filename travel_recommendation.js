@@ -20,6 +20,54 @@ function search() {
         const beach = data.beaches.find(item => item.name.toLowerCase()===input) 
         const temple = data.temples.find(item => item.name.toLowerCase()===input) 
         
+        let countryWords = ["country","countries"]
+        let beachWords = ["beach", "beaches"]
+        let templeWords = ["temple", "temples"]
+
+        const cw = countryWords.find(item=> item === input)
+        const bw = beachWords.find(item=> item === input)
+        const tw = templeWords.find(item=> item === input)
+
+        if(cw){
+            for(c of data.countries){
+                for(city of c.cities){
+                    searchResult.innerHTML += `<div>
+                    <img src="./assets/cities/${city.imageUrl}" alt="">
+                    <div class="result">
+                    <h4>${city.name}</h4>
+                    <p>${city.description}</p>
+                    </div>
+                    <button>Visit</button>
+                    </div>`
+                }
+            }
+        }else
+        if(bw){
+            for(b of data.beaches){
+                    searchResult.innerHTML += `<div>
+                    <img src="./assets/cities/${b.imageUrl}" alt="">
+                    <div class="result">
+                    <h4>${b.name}</h4>
+                    <p>${b.description}</p>
+                    </div>
+                    <button>Visit</button>
+                    </div>`
+                
+            }
+        }else
+        if(tw){
+            for(t of data.temples){
+                    searchResult.innerHTML += `<div>
+                    <img src="./assets/cities/${t.imageUrl}" alt="">
+                    <div class="result">
+                    <h4>${t.name}</h4>
+                    <p>${t.description}</p>
+                    </div>
+                    <button>Visit</button>
+                    </div>`
+                
+            }
+        }else
         if(beach){
            
             searchResult.innerHTML += `<div>
